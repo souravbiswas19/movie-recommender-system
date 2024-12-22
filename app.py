@@ -1,11 +1,5 @@
 import streamlit as st
 import pickle
-# from sklearn.metrics.pairwise import cosine_similarity
-# from sklearn.feature_extraction.text import CountVectorizer
-
-
-# cv = CountVectorizer(max_features=5000, stop_words='english')
-# vectors = cv.fit_transform(movies['tags']).toarray()
 
 def recommend(movie):
     movie_index = movies[movies['title'] == movie].index[0]
